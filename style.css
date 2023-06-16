@@ -1,0 +1,226 @@
+@font-face {
+    font-family: myFont;
+    src: url(fonts/Norsebold.otf);
+}
+
+:root {
+    --background-value1: #222222;
+    --background-value2: #FEFCF3;
+    --text-color-option1: #1A120B;
+    --text-color-option2: #000000;
+    --text-color-option3: #395B64;
+    --text-color-option4: #044343;
+    --text-color-option5: #FFFFFF;
+    --text-color-option6: #51C4D3;
+    --text-color-option7: #BBBBBB;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--txt);
+    background-color: var(--background-value1);
+}
+
+.container {
+    width: 70vw;
+    height: 100vh;
+    background-color: var(--background-value2);
+    display: flex;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.logo-details {
+    background-image: url(images/ahmed-zayan-6h0xlEZoYZY-unsplash.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 28vw;
+
+}
+
+.logo-sytle {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 27vh;
+    gap: 1vw;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28vw;
+}
+
+.logo-name {
+    color: white;
+    font-family: myFont;
+    font-size: 10em;
+}
+
+.logo {
+    height: 15vh;
+}
+
+.sign-up-content {
+    margin-top: 150px;
+
+}
+
+.sign-up-detail-1,
+.sign-up-detail-2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.sign-up-detail-2 {
+    margin-bottom: 50px;
+}
+
+#sign-up-page {
+    background-color: var(--text-color-option5);
+    width: 39.4vw;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    box-shadow: var(--text-color-option2);
+    box-shadow: 0 10px 20px -2px var(--text-color-option2);
+}
+
+.form-left {
+
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+label{
+    font-weight: bold;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+input {
+    border: 1px solid var( --text-color-option7);
+    border-radius: 3px;
+    box-shadow: var(--text-color-option2);
+    height: 30px;
+    color:var(--text-color-option2) ;
+    
+}
+
+input:focus{
+    border: 2px solid var( --text-color-option6);
+}
+
+.left-button {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+button {
+    padding: 15px  30px  15px 30px;
+    border-radius: 10px;
+    background-color:var(--background-value2);
+    color:var(--text-color-option2);
+    font-size: 18px;
+
+}
+button:hover{
+    background-color:var(--text-color-option2);
+    color:var(--background-value2);
+}
+.log-in{
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px)  {
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .logo-details{
+        width: 100vw;
+        height: 20px;
+        display: flex;
+        background-size: 100vw;
+       
+    }
+    .logo-sytle{
+        width: auto;
+        position: static;
+        gap: 10px;
+        padding-right: 200px;
+    }
+    .sign-up-content{
+        width: auto;
+        height: 100vh;  
+    }
+    .sign-up-detail-1{
+        width: auto;
+        margin-top: 30px;
+        padding: 10px 20px;
+    }
+    .sign-up-detail-2{
+        
+    }
+    #sign-up-page{
+        width: auto;
+    }
+    .form-left{
+        flex-flow: column nowrap;
+        align-items: center;
+        padding-right: 50px;
+
+    }
+    .input{
+        text-align: left;
+        width: auto;
+        font-size: 0.9em;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        font-size: 0.9rem;
+        height: 1.5rem;
+        width: 50vw;
+        
+    }
+    .button,
+    .log-in{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    button{
+        margin-bottom: 0px;
+        width: 60vw;
+        padding: 10px 5px;
+    }
+    a{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+}
